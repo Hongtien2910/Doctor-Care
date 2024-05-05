@@ -242,7 +242,7 @@
                                                placeholder="Ghi chú lịch sử bệnh án (nếu có)"
                                                name="breath"></textarea>
                                     <div class="form-group">
-                                        <label class="mt-2 col-form-label w-100">Đã từng đặt khám tại (kể từ 15 ngày qua):</label>
+                                        <!--<label class="mt-2 col-form-label w-100">Đã từng đặt khám tại (kể từ 15 ngày qua):</label>
 
                                         <% places.forEach(function(place) { %>
                                         <div class="form-check form-check-inline">
@@ -256,14 +256,14 @@
                                             <input class="form-check-input" type="radio" name="places"
                                                    id="selectNone" value="none" checked>
                                             <label class="form-check-label" for="selectNone">Chưa từng đặt khám</label>
-                                        </div>
+                                        </div>-->
 
                                         <div class="mt-3">
                                             <label>Các lần khám trước:</label>
                                             <div class="d-flex ">
                                                 <label class="mr-2" for="oldForms">Đăng tải hình ảnh: </label>
-                                                <input name="oldForms" id="oldForms" type="file" accept="image/*"
-                                                       multiple>
+                                                <input name="oldForms" id="oldForms" type="file" accept="image/*" multiple title="Chọn tệp">
+
                                             </div>
                                             <textarea class="form-control mt-2" id="extraOldForms"
                                                       placeholder="Thông tin bổ sung, nếu có "
