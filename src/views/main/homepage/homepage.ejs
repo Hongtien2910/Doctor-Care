@@ -38,7 +38,7 @@
                 </script>
             </div>
             
-            <!--<div class="col-md-3 mt-3 d-none d-md-flex justify-content-around align-self-center">
+            <div class="col-md-3 mt-3 d-none d-md-flex justify-content-around align-self-center">
                 <div class="d-flex flex-column">
                     <a href="/login" class="btn btn-design1 ">Đăng nhập</a>
                 </div>
@@ -48,8 +48,8 @@
                 <a href="https://www.facebook.com/profile.php?id=100011010698678" target="_blank">
                     <img src="../images/background/Vector.png" alt="Contact logo" class="logo">
                 </a>
-            </div>-->
-            <div class="col-md-3 d-none d-md-flex justify-content-around align-self-center">
+            </div>
+            <!--<div class="col-md-3 d-none d-md-flex justify-content-around align-self-center">
                 <a href="/InfoUser" target="_blank">
                     <img src="../images/background/User.png" alt="User logo" class="logo">
                 </a>
@@ -59,7 +59,7 @@
                 <a href="https://www.facebook.com/profile.php?id=100011010698678" target="_blank">
                     <img src="../images/background/Vector.png" alt="Contact logo" class="logo">
                 </a>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
@@ -170,7 +170,6 @@
         </div>
     </div>
 </section>
-<<<<<<< HEAD
 <footer class="sec-foot">
     <div class="container">
         <div class="row">
@@ -190,18 +189,6 @@
                 <p>Email: <a href="mailto:Doctorcare@gmail.com">Doctorcare@gmail.com</a></p>
                 <p>Số điện thoại: 0123 456 789</p>
             </div>
-=======
-<section class="sec-foot">
-    <div class="sec-fields-title mx-auto d-flex my-3">
-        <div>
-            <img src="../images/background/DC.png" alt=""/>
-            <ul>
-                <li style="list-style: none;"><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: 54 Nguyễn Lương Bằng </li>
-                <li style="list-style: none;"><i class="fa fa-link" aria-hidden="true"></i> Website: doctorcare.vn</li>
-                <li style="list-style: none;"><i class="fa fa-envelope" aria-hidden="true"></i> Email: doctorcare@gmail.com</li>
-                <li style="list-style: none;"><i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0123456789</li>
-            </ul>
->>>>>>> 351868a5d1d436dbcda7a4dfd8318c1c7f652fef
         </div>
     </div>
 </footer>
@@ -234,32 +221,6 @@
     </div>
 </div>
 
-<!-- Modal show all clinics-->
-<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-     id="modalAllClinics">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Danh sách gói khám</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row all-specializations-body px-2">
-                    <% clinics.forEach(function(x) { %>
-                        <div class="col-12 col-spe pl-3"><a href="/detail/clinic/<%= x.id %>" class="text-decoration-none"><%= x.name %> </a></div>
-                    <% }) %>
-                        <div class="col-12 col-spe pl-3"><a href="/all-clinics" class="text-decoration-none">Xem tất cả</a></div>
-
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="btn-confirm-booking-spe"  data-dismiss="modal">OK</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Modal show all doctors-->
 <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
